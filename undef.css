@@ -1,0 +1,44 @@
+
+html {
+    font-size-adjust: inherit;
+    background-color: #fff;
+    color: #000;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 12px/18px Arial, "微软雅黑";
+    color: #333;
+}
+
+blockquote, image {
+    border: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+#demo1 {
+    width: 500px;
+    height: 128px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 20px;
+
+}
+
+#demo1 li {
+    line-height: 32px;
+    text-indent: 15px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 动画类库</title>
+    <!-- 引入核心资源 -->
+    <link rel="stylesheet" href="undef.css">
+    <script type="text/javascript" src="undef.js"></script>
+</head>
+<body>
+
+
+
+    <!--
+        1. 文字滚动
+        函数名称: textScroller
+        入参信息：
+               必填:
+                    selector 选择器名称
+               选填:
+                    mode:  {default | hrl}
+                    time:  1000
+                    isMouseOverStop: false [boolean]
+                    executBefore [function]
+                    executAfter [function]
+    -->
+
+
+    <div id="demo1">
+        <ul class="J_textScroll_Control">
+            <li>1.这里是网易新闻</li>
+            <li>2.这里是头条新闻</li>
+            <li>3.这里是腾讯新闻</li>
+            <li>4.这里是CCTV-1新闻</li>
+            <li>5.消消乐</li>
+        </ul>
+    </div>
+
+
+    <script type="text/javascript">
+        var api = $undef(document.getElementById('demo1'), {
+            mode: 'fadeIn',
+            time: 3000,
+            executBefore: function () {
+                console.log('this is executBefore');
+            },
+            executAfter: function () {
+                console.log('this is executAfter');
+            }
+        });
+        console.log(api);
+    </script>
+
+
+</body>
+</html>
